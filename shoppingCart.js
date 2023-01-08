@@ -1,6 +1,11 @@
 // EXPORTING MODULE
 console.log('EXPORTING MODULE');
 
+// Blocking code
+console.log('Start fetching users');
+await fetch('https://jsonplaceholder.typicode.com/users');
+console.log('Finish fetching users');
+
 // named exports
 const cenaSipinga = 10;
 const korpa = [];
