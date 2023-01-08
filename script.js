@@ -35,7 +35,8 @@ lastPost.then(last => console.log(last));
 const lastPost2 = await getLastPost();
 console.log(lastPost2);
 */
-
+/*
+// MODULE PATTERN
 const KorpaZaKupovinu2 = (function () {
   const korpa = [];
   const cenaSipinga = 10;
@@ -61,3 +62,17 @@ const KorpaZaKupovinu2 = (function () {
 
 KorpaZaKupovinu2.dodajUKorpu('jabuka', 4);
 KorpaZaKupovinu2.dodajUKorpu('pica', 2);
+*/
+
+import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+
+const state = {
+  cart: [
+    { product: 'bread', quantity: 5 },
+    { product: 'pizza', quantity: 5 },
+  ],
+  user: { loggedIn: true },
+};
+
+const stateClone = Object.assign({}, state);
+console.log(stateClone);
