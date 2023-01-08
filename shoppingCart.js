@@ -12,4 +12,4 @@ export const dodajUKorpu = function (proizvod, kolicina) {
 const konacnaCena = 237;
 const konacnaKolicina = 23;
 
-export { konacnaCena, konacnaKolicina };
+export { konacnaCena, konacnaKolicina as konKol };
