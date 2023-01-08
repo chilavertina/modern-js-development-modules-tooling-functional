@@ -9,3 +9,8 @@ console.log('IMPORTING MODULE');
 
 import dodaj from './shoppingCart.js';
 dodaj('pica', 2);
+
+const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+const data = await response.json();
+console.log(data);
+console.log('Nesto');
